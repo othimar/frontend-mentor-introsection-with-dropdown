@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <header>
+    <a href="#"><img src="images/logo.svg" alt="logo" class="logo" /></a>
+    <button id="btn-toggle-menu"><img src="images/icon-menu.svg"></button>
+    <div id="nav-container" class="grey-background invisible">
+      <nav>
+        <button id="btn-close-menu"><img src="images/icon-close-menu.svg" alt="close menu button"></button>
+        <ul>
+          <li>
+            <button type="button" class="nav-btn primary">Features <img src="./images/icon-arrow-down.svg"
+                alt="icon"></button>
+            <ul class="secondary-menu">
+              <li><button type="button" class="nav-btn"><img src="images/icon-todo.svg" alt="icon" />Todo List</button>
+              </li>
+              <li><button type="button" class="nav-btn"><img src="images/icon-calendar.svg"
+                    alt="icon" />Calendar</button></li>
+              <li><button type="button" class="nav-btn"><img src="images/icon-reminders.svg"
+                    alt="icon" />Reminders</button></li>
+              <li><button type="button" class="nav-btn"><img src="images/icon-planning.svg"
+                    alt="icon" />Planning</button></li>
+            </ul>
+          </li>
+
+          <li>
+            <button type="button" class="nav-btn primary">Company <img src="./images/icon-arrow-down.svg"
+                alt="icon"></button>
+            <ul class="secondary-menu">
+              <li><button type="button" class="nav-btn">History</button></li>
+              <li><button type="button" class="nav-btn">Our Team</button></li>
+              <li><button type="button" class="nav-btn">Blog</button></li>
+            </ul>
+
+          </li>
+          <li> <button type="button" class="nav-btn">Career</button></li>
+
+          <li> <button type="button" class="nav-btn">About</button></li>
+
+        </ul>
+        <div>
+          <button type="button" id="btn-login">Login</button>
+          <button type="button" id="btn-register">Register</button>
+        </div>
+
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="hero">
+
+      <div class="left">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <div class="hero-btn-container">
+          <button type="button" class="btn-learn">Learn more</button>
+        </div>
+        <div class="client-section">
+          <img class="client-img" src="images/client-databiz.svg" alt="databiz icon" />
+          <img class="client-img" src="images/client-audiophile.svg" alt="audiophile icon" />
+          <img class="client-img" src="images/client-meet.svg" alt="meet icon" />
+          <img class="client-img" src="images/client-maker.svg" alt="maker icon" />
+
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="images/image-hero-mobile.png" alt="a boy using a laptop" class="hero-img">
+        <img src="images/image-hero-desktop.png" alt="a boy using a laptop" class="hero-img-desktop">
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.twitter.com/othimarpele" target="_blank">Othimar</a>.
+    </div>
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

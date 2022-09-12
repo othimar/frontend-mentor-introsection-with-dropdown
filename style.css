@@ -1,0 +1,276 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Epilogue";
+}
+
+body{
+    margin: 20px;
+}
+
+.invisible{
+    display: none;
+}
+/*Mobile*/
+
+header{
+    margin-bottom: 25px;
+}
+.grey-background{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+#btn-close-menu{
+    align-self: flex-end;
+}
+nav {
+    padding: 8px;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--almost-white);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    color: var(--medium-gray);
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--almost-black);
+}
+
+
+
+.nav-btn.primary img {
+    margin-left: 15px;
+}
+
+
+
+.nav-btn img {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.secondary-menu {
+    display: none;
+    padding-left: 12px;
+
+}
+
+.nav-btn:focus-within~ul {
+    display: block;
+}
+
+#btn-login,
+#btn-register {
+    display: block;
+    margin: auto;
+    padding: 16px;
+}
+
+
+#btn-register{
+    width: 100%;
+    border: 2px solid var(--medium-gray);
+    border-radius: 18px;
+}
+
+#btn-register:hover{
+    border-color: var(--almost-black);
+}
+
+#btn-toggle-menu {
+    float: right;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hero-img{
+    width: 100vw;
+    height: auto;
+    margin-left: -20px;
+}
+
+.hero-img-desktop{
+    display: none;
+}
+
+main h1{
+    text-align: center;
+    color: var(--almost-black);
+}
+main p{
+    color: var(--medium-gray);
+    text-align: center;
+}
+
+.hero-btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.btn-learn{
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    border-radius: 18px;
+    padding: 16px 16px;
+    border: 2px solid var(--almost-white);
+}
+
+.btn-learn:hover{
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+    border-color:  var(--almost-black);
+}
+
+.client-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.client-section>.client-img{
+    max-width: 20%;
+}
+
+main{
+    margin-bottom: 50px;
+}
+
+/*Desktop*/
+@media (min-width:1200px) {
+    body{
+        margin:50px 100px;
+    }
+    
+    .hero{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-img-desktop{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: initial;
+    }
+    .left, .right{
+        width: 46%;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main h1{
+        text-align: start;
+        font-size: 72px;
+    }
+    main p{
+        text-align: start;
+        line-height: 1.6;
+        width: 90%;
+    }
+    .hero-btn-container{
+        justify-content: left;
+    }
+    header{
+        display: flex;
+        align-items: center;
+    }
+    .grey-background{
+        flex-grow: 1;
+        display: inline-block;
+        background-color: transparent;
+        position: static;
+        width: initial;
+        height: initial;
+        z-index: initial;
+
+    }
+    #btn-toggle-menu{
+        display: none;
+    }
+    #btn-close-menu{
+        display: none;
+    }
+
+    nav{
+        position: static;
+        flex-direction: row;
+        padding: 0;
+        width: initial;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    nav ul{
+        display: flex;
+        position: relative;
+    }
+
+    .grey-background div{
+        display: flex;
+    }
+    nav ul li {
+        position: static;
+    }
+    nav ul li ul{
+        position: absolute;
+        top: calc(100%+5px);
+        background-color: var(--almost-white);
+        border-radius: 10px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.116);
+        padding: 10px;
+    }
+}
